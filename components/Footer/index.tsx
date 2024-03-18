@@ -24,7 +24,7 @@ const Footer = () => {
                   </div>
                   <div className="w-full md:w-1/2 lg:w-5/12">
                      <div className="footer_link_wrapper flex flex-wrap mx-3">
-                        <div className="footer_link w-1/2 md:pl-13 mt-13">
+                        <div className="footer_link w-1/2 md:pr-13 mt-13">
                            <h2 className="footer_title text-xl font-semibold text-white">Quick Links</h2>
                            <ul className="link pt-4">
                               <li><a href="#" className="text-white mt-4 hover:text-theme-color">Company</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
                               <li><a href="#" className="text-white mt-4 hover:text-theme-color">About</a></li>
                            </ul>
                         </div>
-                        <div className="footer_link w-1/2 md:pl-13 mt-13">
+                        <div className="footer_link w-1/2 md:pr-13 mt-13">
                            <h2 className="footer_title text-xl font-semibold text-white">Resources</h2>
                            <ul className="link pt-4">
                               <li><a href="#" className="text-white mt-4 hover:text-theme-color">Support</a></li>
@@ -58,10 +58,10 @@ const Footer = () => {
             <div className="footer_copyright pt-3 pb-6 border-t-2 border-solid border-white border-opacity-10 sm:flex justify-between">
                <div className="footer_social pt-4 mx-3 text-center">
                   <ul className="social flex justify-center sm:justify-start">
-                     <li className="mr-3"><a href="https://twitter.com/uideckHQ"><i className="lni lni-envelope"></i></a></li>
-                     <li className="mr-3"><a href="https://instagram.com/uideckHQ"><i className="lni lni-instagram-fill"></i></a></li>
-                     <li className="mr-3"><a href="https://facebook.com/uideckHQ"><i className="lni lni-telegram-original"></i></a></li>
-                     <li className="mr-3"><a href="#"><i className="lni lni-linkedin-original"></i></a></li>
+                     <li className="ml-3"><a href="https://twitter.com/uideckHQ"><i className="lni lni-envelope"></i></a></li>
+                     <li className="ml-3"><a href="https://instagram.com/uideckHQ"><i className="lni lni-instagram-fill"></i></a></li>
+                     <li className="ml-3"><a href="https://facebook.com/uideckHQ"><i className="lni lni-telegram-original"></i></a></li>
+                     <li className="ml-3"><a href="#"><i className="lni lni-linkedin-original"></i></a></li>
                   </ul>
                </div>
                <div className="footer_copyright_content pt-4 text-center">

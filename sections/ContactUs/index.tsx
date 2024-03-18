@@ -4,8 +4,8 @@ const ContactUs = () => {
    return (
       <section id="contact" className="contact_area relative pt-18 pb-120">
          <div className="contact_image flex items-center justify-end">
-            <div className="image lg:pr-13">
-               <img src="/images/contact.svg" alt="about" />
+            <div className="image lg:pl-13">
+               <img src="/images/contact.svg" alt="contact" />
             </div>
          </div>
 

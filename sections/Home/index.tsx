@@ -40,7 +40,7 @@ const HomePage = () => {
                <div className="w-full lg:w-1/2">
                   <div className="header_hero_content pt-150 lg:pt-0">
                      <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Creative Multipurpose Tailwind CSS <span className="text-theme-color">Template</span></h2>
-                     <p className="mt-8 lg:mr-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                     <p className="mt-8 lg:ml-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
                      <div className="hero_btn mt-10">
                         <a className="main-btn" href="#0">Get Started</a>
                      </div>
@@ -51,7 +51,7 @@ const HomePage = () => {
          <div className="header_shape hidden lg:block"></div>
 
          <div className="header_image flex items-center">
-            <div className="image 2xl:pl-25">
+            <div className="image 2xl:pr-25">
                <img src="/images/header-image.svg" alt="Header Image" />
             </div>
          </div>

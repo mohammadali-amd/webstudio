@@ -4,12 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+   font-family: Vazir;
+   src: url("../public/fonts/Vazirmatn-Regular.ttf");
+}
+
 html {
    scroll-behavior: smooth;
 }
 
 body {
-   font-family: 'Nunito', sans-serif;
+   font-family: Vazir, 'Nunito', sans-serif;
    @apply text-body-color;
 }
 
@@ -102,7 +107,7 @@ button {
 }
 
 .scroll-top {
-   @apply w-11 h-11 bg-theme-color flex justify-center items-center text-white fixed bottom-8 right-8 rounded-md text-lg transition-all duration-300 z-20;
+   @apply w-11 h-11 bg-theme-color flex justify-center items-center text-white fixed bottom-8 left-8 rounded-md text-lg transition-all duration-300 z-20;
 }
 
 .scroll-top:hover {
@@ -185,77 +190,77 @@ button {
 
 .shape_1 {
    @apply top-150;
-   left: 10%;
+   right: 10%;
 }
 
 .shape_2 {
    @apply top-150;
-   left: 30%;
+   right: 30%;
 }
 
 .shape_3 {
    @apply top-200;
-   left: 40%;
+   right: 40%;
 }
 
 .shape_4 {
    @apply top-120;
-   left: 50%;
+   right: 50%;
 }
 
 .shape_5 {
    top: 40%;
-   left: 14%;
+   right: 14%;
 }
 
 .shape_6 {
    top: 34%;
-   left: 48%;
+   right: 48%;
 }
 
 .shape_7 {
    top: 60%;
-   left: 80px;
+   right: 80px;
 }
 
 .shape_8 {
    top: 55%;
-   left: 38%;
+   right: 38%;
 }
 
 .shape_9 {
    @apply bottom-25;
-   left: 13%;
+   right: 13%;
 }
 
 .shape_10 {
-   @apply bottom-200 left-1/4;
+   @apply bottom-200 right-1/4;
 }
 
 .shape_11 {
    @apply bottom-20;
-   left: 35%;
+   right: 35%;
 }
 
 .shape_12 {
    @apply bottom-1/4;
-   left: 42%;
+   right: 42%;
 }
 
 .header_shape {
-   @apply absolute top-0 right-0 h-full w-1/2;
+   @apply absolute top-0 -left-130 h-full w-1/2;
 }
 
 .header_shape::before {
    content: '';
    background-color: #F5F5FC;
    transform: skewX(-15deg);
-   width: 200%;
+   width: 100%;
    @apply absolute top-0 left-0 h-full;
 }
 
 .header_image {
-   @apply lg:absolute top-0 right-0 w-full lg:w-1/2 h-auto lg:h-full mx-auto mt-13 lg:mt-0 px-5 lg:px-0;
+   @apply lg:absolute top-0 left-0 w-full lg:w-1/2 h-auto lg:h-full mx-auto mt-13 lg:mt-0 px-5 lg:px-0;
 }
 
 .header_image img {
@@ -291,7 +296,7 @@ button {
 
 /* ========== about ========== */
 .about_image {
-   @apply lg:absolute top-0 left-0 w-full lg:w-1/2 h-auto lg:h-full mx-auto mt-13 lg:mt-0 px-5 lg:px-0;
+   @apply lg:absolute top-0 right-0 w-full lg:w-1/2 h-auto lg:h-full mx-auto mt-13 lg:mt-0 px-5 lg:px-0;
 }
 
 .about_image img {
@@ -428,12 +433,12 @@ button {
 /* ========== contact ========= */
 
 .contact_image {
-   @apply lg:absolute top-0 left-0 w-full lg:w-1/2 h-auto lg:h-full mx-auto mt-13 lg:mt-0 px-5 lg:px-0;
+   @apply lg:absolute top-0 right-0 w-full lg:w-1/2 h-auto lg:h-full mx-auto mt-13 lg:mt-0 px-5 lg:px-0;
 }
 
 .contact_image img {
    @apply max-w-full lg:max-w-screen-md lg:w-auto;
-   max-width: 770px;
+   /* max-width: 770px; */
 }
 
 .contact-btn {
@@ -443,7 +448,7 @@ button {
 
 /* =========== footer ========== */
 .subscribe-btn {
-   @apply mt-3 md:mt-0 md:absolute top-1 right-1 py-4 bg-theme-color rounded-full hover:bg-opacity-80;
+   @apply mt-3 md:mt-0 md:absolute top-1 left-1 py-4 bg-theme-color rounded-full hover:bg-opacity-80;
 }
 
 .footer_social li a {

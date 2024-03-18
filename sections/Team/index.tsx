@@ -46,7 +46,7 @@ const Team = () => {
                </div>
             </div>
             <div className="team-wrapper relative">
-               <div className="row team_active px-12">
+               <div className="row team_active px-4 md:px-12">
                   <Swiper
                      style={{
                         '--swiper-navigation-color': '#000',

@@ -56,11 +56,11 @@ const Projects = () => {
          </div>
          <div className="container-fluid">
             <div className="work_wrapper relative">
-               <div className="row work_active px-12">
+               <div className="row work_active px-4 md:px-12">
                   <Swiper
                      style={{
                         '--swiper-navigation-color': '#000',
-                        '--swiper-pagination-color': '#000',
+                        // '--swiper-pagination-color': '#000',
                      }}
                      // spaceBetween={20}
                      slidesPerView={1}
@@ -75,7 +75,7 @@ const Projects = () => {
                      }}
                      onSlideChange={() => console.log('slide change')}
                      navigation={true}
-                     pagination={true}
+                     // pagination={true}
                      modules={[Navigation, Pagination]}
                      onSwiper={(swiper) => console.log(swiper)}
                   >

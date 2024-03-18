@@ -60,10 +60,9 @@ const AboutUs = () => {
             </div>
          </section>
 
-
          <section id="why" className="about_area pt-120 relative">
             <div className="about_image flex items-end justify-end">
-               <div className="image lg:pr-13">
+               <div className="image lg:pl-13">
                   <img src="/images/about.svg" alt="about" />
                </div>
             </div>
@@ -107,6 +106,7 @@ const AboutUs = () => {
                </div>
             </div>
          </section>
+
 
       </div>
    )
