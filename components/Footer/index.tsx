@@ -15,7 +15,9 @@ const Footer = () => {
                   <div className="w-full md:w-1/2 lg:w-3/12">
                      <div className="footer_about mt-13 mx-3">
                         <div className="footer_logo">
-                           <a href="#"><img src="/images/logo-footer.svg" alt="" /></a>
+                           <a href="#">
+                              <img src="/logo.png" alt="Logo" className="w-[60px] md:w-[90px] object-contain" />
+                           </a>
                         </div>
                         <div className="footer_content mt-8">
                            <p className="text-white">Lorem ipsum dolor sitco nsetetu nonumy eirmod tempor invidunt ut labore et dolore magna uyam erat, sed diam.</p>
@@ -59,7 +61,7 @@ const Footer = () => {
                <div className="footer_social pt-4 mx-3 text-center">
                   <ul className="social flex justify-center sm:justify-start">
                      <li className="ml-3"><a href="https://twitter.com/uideckHQ"><i className="lni lni-envelope"></i></a></li>
-                     <li className="ml-3"><a href="https://instagram.com/uideckHQ"><i className="lni lni-instagram-fill"></i></a></li>
+                     <li className="ml-3"><a href="https://instagram.com/uideckHQ"><i className="lni lni-instagram-original"></i></a></li>
                      <li className="ml-3"><a href="https://facebook.com/uideckHQ"><i className="lni lni-telegram-original"></i></a></li>
                      <li className="ml-3"><a href="#"><i className="lni lni-linkedin-original"></i></a></li>
                   </ul>

@@ -1,48 +1,58 @@
+import Image from "next/image"
+
 const HomePage = () => {
    return (
       <div id="home" className="header_hero bg-gray relative z-10 overflow-hidden lg:flex items-center">
          <div className="hero_shape shape_1">
-            <img src="/images/shape/shape-1.svg" alt="shape" />
+            <i className="lni lni-nodejs text-5xl text-green-600"></i>
          </div>
          <div className="hero_shape shape_2">
-            <img src="/images/shape/shape-2.svg" alt="shape" />
-         </div>
-         <div className="hero_shape shape_3">
-            <img src="/images/shape/shape-3.svg" alt="shape" />
-         </div>
-         <div className="hero_shape shape_4">
-            <img src="/images/shape/shape-4.svg" alt="shape" />
-         </div>
-         <div className="hero_shape shape_6">
             <img src="/images/shape/shape-1.svg" alt="shape" />
          </div>
-         <div className="hero_shape shape_7">
-            <img src="/images/shape/shape-4.svg" alt="shape" />
+         <div className="hero_shape shape_3">
+            <i className="lni lni-javascript text-2xl "></i>
          </div>
-         <div className="hero_shape shape_8">
-            <img src="/images/shape/shape-3.svg" alt="shape" />
-         </div>
-         <div className="hero_shape shape_9">
+         <div className="hero_shape shape_4">
             <img src="/images/shape/shape-2.svg" alt="shape" />
          </div>
-         <div className="hero_shape shape_10">
+         <div className="hero_shape shape_6">
+            <img src="/images/shape/shape-3.svg" alt="shape" />
+         </div>
+         <div className="hero_shape shape_7">
+            <i className="lni lni-mongodb text-3xl text-green-500"></i>
+         </div>
+         <div className="hero_shape shape_8">
             <img src="/images/shape/shape-4.svg" alt="shape" />
+         </div>
+         <div className="hero_shape shape_9">
+            <i className="lni lni-nextjs text-5xl text-stone-950"></i>
+         </div>
+         <div className="hero_shape shape_10">
+            <i className="lni lni-tailwindcss text-3xl text-cyan-400"></i>
          </div>
          <div className="hero_shape shape_11">
             <img src="/images/shape/shape-1.svg" alt="shape" />
          </div>
          <div className="hero_shape shape_12">
-            <img src="/images/shape/shape-2.svg" alt="shape" />
+            <i className="lni lni-react text-4xl text-cyan-500"></i>
          </div>
 
          <div className="container">
             <div className="row">
                <div className="w-full lg:w-1/2">
                   <div className="header_hero_content pt-150 lg:pt-0">
-                     <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Creative Multipurpose Tailwind CSS <span className="text-theme-color">Template</span></h2>
-                     <p className="mt-8 lg:ml-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                     <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
+                        طراحی وبسایت و ارائه خدمات دیجیتال <span className="text-theme-color">در وب استودیو</span>
+                     </h2>
+                     <p className="mt-8 lg:ml-8">
+                        ما اینجا به شما کمک می کنیم تا کسب و کارتون رو دیجیتال کنید.
+                        <br />
+                        با ما از رقبایتان چند قدم جلوتر باشید!
+                        <br />
+                        برای ارتباط با ما میتونید از شبکه های اجتماعی و راه های ارتباطی در بخش تماس ها استفاده کنید...
+                     </p>
                      <div className="hero_btn mt-10">
-                        <a className="main-btn" href="#0">Get Started</a>
+                        <a className="main-btn" href="#contact">راه های ارتباطی</a>
                      </div>
                   </div>
                </div>
@@ -51,8 +61,14 @@ const HomePage = () => {
          <div className="header_shape hidden lg:block"></div>
 
          <div className="header_image flex items-center">
-            <div className="image 2xl:pr-25">
-               <img src="/images/header-image.svg" alt="Header Image" />
+            <div className="md:pr-[7rem]">
+               <Image
+                  src="/images/hero-image.svg"
+                  alt="Hero image"
+                  width={600}
+                  height={600}
+                  priority
+               />
             </div>
          </div>
       </div>

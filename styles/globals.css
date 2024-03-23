@@ -175,12 +175,18 @@ button {
 
 /* =========== hero =========== */
 .header_hero {
-   height: 900px;
+   height: 700px;
 }
 
-@media (max-width: 1400px) {
+@media (min-width:480px) {
    .header_hero {
-      height: 800px;
+      height: 700px;
+   }
+}
+
+@media (max-width: 780px) {
+   .header_hero {
+      height: 1000px;
    }
 }
 
@@ -189,7 +195,7 @@ button {
 }
 
 .shape_1 {
-   @apply top-150;
+   @apply top-140;
    right: 10%;
 }
 
@@ -199,7 +205,7 @@ button {
 }
 
 .shape_3 {
-   @apply top-200;
+   @apply top-140;
    right: 40%;
 }
 
@@ -224,7 +230,7 @@ button {
 }
 
 .shape_8 {
-   top: 55%;
+   top: 60%;
    right: 38%;
 }
 
@@ -244,7 +250,7 @@ button {
 
 .shape_12 {
    @apply bottom-1/4;
-   right: 42%;
+   right: 48%;
 }
 
 .header_shape {
@@ -264,7 +270,7 @@ button {
 }
 
 .header_image img {
-   @apply max-w-full lg:w-auto xl:max-w-screen-md;
+   @apply max-w-full xl:max-w-screen-md;
 }
 
 /* =========== service =========== */

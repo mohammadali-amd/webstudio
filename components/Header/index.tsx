@@ -43,7 +43,7 @@ const Header = () => {
                         </div>
 
                         <Link href="/" className="navbar-brand mr-5">
-                           <img src="/images/logo.svg" alt="Logo" />
+                           <img src="/logo.png" alt="Logo" className="w-[60px] md:w-[90px] object-contain" />
                         </Link>
                         <button className="block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
                            <span className="toggler-icon"></span>

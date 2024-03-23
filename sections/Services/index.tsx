@@ -10,8 +10,8 @@ const Services = (props: Props) => {
             <div className="row justify-center">
                <div className="w-full lg:w-1/2">
                   <div className="section_title text-center pb-6">
-                     <h5 className="sub_title">What We Do</h5>
-                     <h4 className="main_title">Our Services</h4>
+                     <h5 className="sub_title">ما در وب استودیو چکار میکنیم؟</h5>
+                     <h4 className="main_title">خدمات ما</h4>
                   </div>
                </div>
             </div>
@@ -25,7 +25,7 @@ const Services = (props: Props) => {
                         </svg>
                      </div>
                      <div className="services_content mt-5 xl:mt-10">
-                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Web Design</h3>
+                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">طراحی سایت</h3>
                         <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                      </div>
                   </div>
@@ -40,7 +40,7 @@ const Services = (props: Props) => {
                         </svg>
                      </div>
                      <div className="services_content mt-5 xl:mt-10">
-                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Digital Marketing</h3>
+                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">دیجیتال مارکتینگ</h3>
                         <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                      </div>
                   </div>
@@ -55,7 +55,7 @@ const Services = (props: Props) => {
                         </svg>
                      </div>
                      <div className="services_content mt-5 xl:mt-10">
-                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Mobile Apps</h3>
+                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">اپلیکیشن موبایل</h3>
                         <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                      </div>
                   </div>
@@ -70,7 +70,7 @@ const Services = (props: Props) => {
                         </svg>
                      </div>
                      <div className="services_content mt-5 xl:mt-10">
-                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">SEO Consultancy</h3>
+                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">خدمات سئو</h3>
                         <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                      </div>
                   </div>
@@ -85,7 +85,7 @@ const Services = (props: Props) => {
                         </svg>
                      </div>
                      <div className="services_content mt-5 xl:mt-10">
-                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Graphic Design</h3>
+                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">طراحی گرافیک</h3>
                         <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                      </div>
                   </div>
@@ -100,7 +100,7 @@ const Services = (props: Props) => {
                         </svg>
                      </div>
                      <div className="services_content mt-5 xl:mt-10">
-                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Business Consultancy</h3>
+                        <h3 className="services_title text-black font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">مشاوره کسب و کار</h3>
                         <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
                      </div>
                   </div>
