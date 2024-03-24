@@ -133,7 +133,7 @@ button {
 }
 
 .sticky {
-   @apply fixed bg-white shadow-md;
+   @apply fixed bg-white/65 backdrop-blur-md shadow-md;
 }
 
 .collapse.show {
