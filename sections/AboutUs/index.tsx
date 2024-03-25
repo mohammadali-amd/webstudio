@@ -8,8 +8,8 @@ const AboutUs = () => {
                <div className="row justify-center">
                   <div className="w-full lg:w-1/2">
                      <div className="section_title text-center pb-6">
-                        <h5 className="sub_title">About</h5>
-                        <h4 className="main_title">Work Process</h4>
+                        <h5 className="sub_title">درباره ما</h5>
+                        <h4 className="main_title">مراحل کار</h4>
                      </div>
                   </div>
                </div>
@@ -23,8 +23,10 @@ const AboutUs = () => {
                            </svg>
                         </div>
                         <div className="services_content mt-5">
-                           <h3 className="services_title text-black font-semibold text-xl md:text-3xl">Research</h3>
-                           <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                           <h3 className="services_title text-black font-semibold text-xl md:text-3xl">تحقیق و پژوهش</h3>
+                           <p className="mt-4">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -37,8 +39,10 @@ const AboutUs = () => {
                            </svg>
                         </div>
                         <div className="services_content mt-5">
-                           <h3 className="services_title text-black font-semibold text-xl md:text-3xl">Prototype</h3>
-                           <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                           <h3 className="services_title text-black font-semibold text-xl md:text-3xl">ارائه نمونه اولیه</h3>
+                           <p className="mt-4">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -51,8 +55,10 @@ const AboutUs = () => {
                            </svg>
                         </div>
                         <div className="services_content mt-5">
-                           <h3 className="services_title text-black font-semibold text-xl md:text-3xl">Build</h3>
-                           <p className="mt-4">Lorem ipsum dolor sit amet, consetetur sadi aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores </p>
+                           <h3 className="services_title text-black font-semibold text-xl md:text-3xl">ایجاد پروژه</h3>
+                           <p className="mt-4">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -74,30 +80,42 @@ const AboutUs = () => {
                            <h5 className="sub_title">Why Choose Us</h5>
                            <h4 className="main_title">Your Goal is Our Achievement</h4>
                         </div>
-                        <p>Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergren, no sea takimata sanctus. </p>
+                        <p>
+                           ما در مجموعه وب استودیو با تلاش برای پیاده سازی امکانات و ویژگی های مورد نظر کارفرمایان با مناسبترین قیمت ها فعالیت داریم. 😉✌
+                           <br />
+                           همچنین امکان پرداخت قسطی هزینه سایت، اپلیکیشن و دیگر خدمات را هم فراهم نمودیم تا امکان استفاده از خدمات برای تمامی عزیزان فراهم باشد. ✅💖
+                           <br />
+                           در جداول زیر حدود قیمت طراحی سایت مورد نیاز شما آورده شده است، اما برای هر سایت با امکانات خاصی که کارفرما درخواست دارد ممکن است که این هزینه کم یا زیاد شود. به همین منظور برای اطلاع از قیمت پروژه و وبسایت خود با ما از طریق راه های ارتباطی که در وبسایت آمده در تماس باشید تا کارشناسان ما در سریعترین زمان ممکن پاسخگوی شما عزیزان باشند. 👌📊
+                        </p>
                         <ul className="about_list pt-3">
                            <li className="flex mt-5">
                               <div className="about_check">
                                  <i className="lni lni-checkmark-circle"></i>
                               </div>
-                              <div className="about_list_content pl-5 pr-2">
-                                 <p>Vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
+                              <div className="about_list_content pr-5 pl-2">
+                                 <p>
+                                    مجموعه وب استودیو از سال 1400 فعالیت خود را در حوزه طراحی وب و برنامه نویسی شروع کرده و با شور و اشتیاق به فعالیت خود در این زمینه ادامه می دهد.✨
+                                 </p>
                               </div>
                            </li>
                            <li className="flex mt-5">
                               <div className="about_check">
                                  <i className="lni lni-checkmark-circle"></i>
                               </div>
-                              <div className="about_list_content pl-5 pr-2">
-                                 <p>At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
+                              <div className="about_list_content pr-5 pl-2">
+                                 <p>
+                                    ما در وب استودیو در تلاشیم با بکار بردن بروزترین تکنولوژی ها و در نظر گرفتن جزئیات کار، بهترین محصول را تحویل شما کارفرمایان عزیز دهیم و شما را از اعتماد به این مجموعه خرسند نماییم.✅
+                                 </p>
                               </div>
                            </li>
                            <li className="flex mt-5">
                               <div className="about_check">
                                  <i className="lni lni-checkmark-circle"></i>
                               </div>
-                              <div className="about_list_content pl-5 pr-2">
-                                 <p>Dvero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
+                              <div className="about_list_content pr-5 pl-2">
+                                 <p>
+                                    برای طراحی سایت، اپلیکیشن موبایل، دیجیتال مارکتینگ و ... از طریق راه های ارتباطی ذکر شده با ما در تماس باشید. 😊💕
+                                 </p>
                               </div>
                            </li>
                         </ul>
