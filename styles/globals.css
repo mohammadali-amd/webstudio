@@ -427,6 +427,14 @@ button {
    @apply bg-theme-color text-white;
 }
 
+.pricing_check_active i {
+   @apply w-7 h-7 flex items-center justify-center text-white bg-theme-color rounded-full text-base;
+}
+
+.pricing_check i {
+   @apply w-7 h-7 flex items-center justify-center text-black group-hover:text-white bg-[#fff1f1] group-hover:bg-theme-color rounded-full text-base duration-300 delay-300;
+}
+
 /* ========== blog ========= */
 .blog_title a {
    @apply block text-black font-semibold mt-5 hover:text-theme-color text-xl sm:text-2xl;
