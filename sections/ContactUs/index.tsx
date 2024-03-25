@@ -5,7 +5,7 @@ const ContactUs = () => {
       <section id="contact" className="contact_area relative pt-18 pb-120">
          <div className="contact_image flex items-center justify-end">
             <div className="image lg:pl-13">
-               <img src="/images/contact.svg" alt="contact" />
+               <img src="/images/contact-pic.jpg" alt="contact us" />
             </div>
          </div>
 
@@ -14,9 +14,25 @@ const ContactUs = () => {
                <div className="w-full lg:w-1/2">
                   <div className="contact_wrapper mt-11">
                      <div className="section_title pb-4">
-                        <h5 className="sub_title">Contact</h5>
-                        <h4 className="main_title">Get In Touch</h4>
-                        <p>Lorem ipsum dolor sitrg amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                        <h5 className="sub_title">| تماس با ما</h5>
+                        <h4 className="main_title">راه های ارتباطی با ما</h4>
+                        <div className="pt-12 pl-8 space-y-12 lg:space-y-0 xl:flex lg:justify-between">
+                           {/* Instagram */}
+                           <a target="_blank" href="https://instagram.com/webstudio.official/" className="grid justify-items-center" rel="noreferrer">
+                              <i className="lni lni-instagram text-3xl"></i>
+                              <span className="text-lg mt-3">webstudio.official</span>
+                           </a>
+                           {/* Whatsapp */}
+                           <a target="_blank" href="tel:09981140432" className="grid justify-items-center" rel="noreferrer">
+                              <i className="lni lni-whatsapp text-3xl"></i>
+                              <span className="text-lg mt-3">09981140432</span>
+                           </a>
+                           {/* Email */}
+                           <a target="_blank" href="mailto:webstudio.ir@gmail.com" className="grid justify-items-center" rel="noreferrer">
+                              <i className="lni lni-envelope text-3xl"></i>
+                              <span className="text-lg mt-3">webstudio.ir@gmail.com</span>
+                           </a>
+                        </div>
                      </div>
 
                      <div className="contact_form">
@@ -25,21 +41,21 @@ const ContactUs = () => {
                               <div className="w-full md:w-1/2">
                                  <div className="mx-3">
                                     <div className="single_form mt-8">
-                                       <input name="name" id="name" type="text" placeholder="Name" className="w-full rounded-md py-4 px-6 border border-solid border-body-color" />
+                                       <input name="name" id="name" type="text" placeholder="نام" className="w-full rounded-md py-4 px-6 border border-solid border-body-color" />
                                     </div>
                                  </div>
                               </div>
                               <div className="w-full md:w-1/2">
                                  <div className="mx-3">
                                     <div className="single_form mt-8">
-                                       <input name="email" id="email" type="email" placeholder="Email" className="w-full rounded-md py-4 px-6 border border-solid border-body-color" />
+                                       <input name="email" id="email" type="email" placeholder="ایمیل" className="w-full rounded-md py-4 px-6 border border-solid border-body-color" />
                                     </div>
                                  </div>
                               </div>
                               <div className="w-full">
                                  <div className="mx-3">
                                     <div className="single_form mt-8">
-                                       <textarea name="message" id="message" placeholder="Message" rows={5} className="w-full rounded-md py-4 px-6 border border-solid border-body-color resize-none"></textarea>
+                                       <textarea name="message" id="message" placeholder="متن مورد نظر خود را بنویسید..." rows={5} className="w-full rounded-md py-4 px-6 border border-solid border-body-color resize-none"></textarea>
                                     </div>
                                  </div>
                               </div>
@@ -47,7 +63,7 @@ const ContactUs = () => {
                               <div className="w-full">
                                  <div className="mx-3">
                                     <div className="single_form mt-8">
-                                       <button type="submit" className="main-btn contact-btn">Submit</button>
+                                       <button type="submit" className="main-btn contact-btn">ارسال</button>
                                     </div>
                                  </div>
                               </div>

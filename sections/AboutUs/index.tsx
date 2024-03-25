@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const AboutUs = () => {
@@ -8,7 +9,7 @@ const AboutUs = () => {
                <div className="row justify-center">
                   <div className="w-full lg:w-1/2">
                      <div className="section_title text-center pb-6">
-                        <h5 className="sub_title">درباره ما</h5>
+                        <h5 className="sub_title">| درباره ما</h5>
                         <h4 className="main_title">مراحل کار</h4>
                      </div>
                   </div>
@@ -67,9 +68,15 @@ const AboutUs = () => {
          </section>
 
          <section id="why" className="about_area pt-120 relative">
-            <div className="about_image flex items-end justify-end">
-               <div className="image lg:pl-13">
-                  <img src="/images/about.svg" alt="about" />
+            <div className="about_image flex items-center pt-20 justify-end">
+               <div className="image lg:pl-10">
+                  <Image
+                     src="/images/web-design.svg"
+                     alt="web-design"
+                     width={700}
+                     height={700}
+                  />
+                  {/* <img src="/images/web-design.svg" alt="" /> */}
                </div>
             </div>
             <div className="container">
@@ -77,8 +84,8 @@ const AboutUs = () => {
                   <div className="w-full lg:w-1/2">
                      <div className="about_content mx-4 pt-11 lg:pt-15 lg:pb-15">
                         <div className="section_title pb-9">
-                           <h5 className="sub_title">Why Choose Us</h5>
-                           <h4 className="main_title">Your Goal is Our Achievement</h4>
+                           <h5 className="sub_title">| چرا باید ما را انتخاب کنید؟</h5>
+                           <h4 className="main_title">جلب رضایت شما، افتخار ماست</h4>
                         </div>
                         <p>
                            ما در مجموعه وب استودیو با تلاش برای پیاده سازی امکانات و ویژگی های مورد نظر کارفرمایان با مناسبترین قیمت ها فعالیت داریم. 😉✌

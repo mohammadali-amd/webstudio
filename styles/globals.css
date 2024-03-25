@@ -9,6 +9,30 @@
    src: url("../public/fonts/Vazirmatn-Regular.ttf");
 }
 
+/* Scroll Bar Start */
+/* width */
+::-webkit-scrollbar {
+   width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   /* background: #fff; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   @apply bg-theme-color;
+   border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   @apply bg-teal-800 duration-300;
+}
+
+/* Scroll Bar End */
+
 html {
    scroll-behavior: smooth;
 }
@@ -186,7 +210,7 @@ button {
 
 @media (max-width: 780px) {
    .header_hero {
-      height: 1000px;
+      height: 900px;
    }
 }
 
@@ -266,7 +290,7 @@ button {
 }
 
 .header_image {
-   @apply lg:absolute top-0 left-0 w-full lg:w-1/2 h-auto lg:h-full mx-auto mt-13 lg:mt-0 px-5 lg:px-0;
+   @apply lg:absolute top-0 left-0 w-full lg:w-1/2 h-auto lg:h-full mx-auto mt-8 px-5 lg:px-0;
 }
 
 .header_image img {
@@ -288,7 +312,7 @@ button {
 }
 
 .services_shape {
-   fill: #fff1f1;
+   fill: #dafffa;
    @apply transition-all duration-300;
 }
 
@@ -306,7 +330,8 @@ button {
 }
 
 .about_image img {
-   @apply max-w-full lg:w-auto lg:max-w-screen-md;
+   @apply max-w-full;
+   /* @apply max-w-full lg:w-auto lg:max-w-screen-md; */
 }
 
 .about_check i {
@@ -332,6 +357,11 @@ button {
 
 .work_title a {
    @apply text-black hover:text-theme-color;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+   @apply bg-white rounded-full p-8 shadow-md hover:bg-teal-700 hover:text-white duration-300
 }
 
 /* ======== team ======= */
@@ -419,7 +449,7 @@ button {
 
 .pricing_btn {
    @apply py-3 px-6 text-body-color mt-8 rounded-md;
-   background-color: #fff1f1;
+   background-color: #dafffa;
 }
 
 .single_pricing:hover .pricing_btn,
@@ -432,7 +462,7 @@ button {
 }
 
 .pricing_check i {
-   @apply w-7 h-7 flex items-center justify-center text-black group-hover:text-white bg-[#fff1f1] group-hover:bg-theme-color rounded-full text-base duration-300 delay-300;
+   @apply w-7 h-7 flex items-center justify-center text-black group-hover:text-white bg-[#dafffa] group-hover:bg-theme-color rounded-full text-base duration-300 delay-150;
 }
 
 /* ========== blog ========= */
@@ -451,7 +481,7 @@ button {
 }
 
 .contact_image img {
-   @apply max-w-full lg:max-w-screen-md lg:w-auto;
+   @apply max-w-full lg:max-w-screen-md lg:w-auto rounded-xl shadow-lg;
    /* max-width: 770px; */
 }
 

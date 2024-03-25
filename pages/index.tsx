@@ -7,7 +7,6 @@ import HomePage from '@/sections/Home/index';
 import Pricing from '@/sections/Pricing';
 import Projects from '@/sections/Projects';
 import Services from '@/sections/Services';
-import Team from '@/sections/Team';
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       <Services />
       <Projects />
       <Pricing />
-      <Team />
       {/* <Blog /> */}
       <ContactUs />
       <Footer />

@@ -44,8 +44,8 @@ const Services = () => {
             <div className="row justify-center">
                <div className="w-full lg:w-1/2">
                   <div className="section_title text-center pb-6">
-                     <h5 className="sub_title">ما در وب استودیو چکار میکنیم؟</h5>
-                     <h4 className="main_title">خدمات ما</h4>
+                     <h5 className="sub_title">| ما در وب استودیو چکار میکنیم؟</h5>
+                     <h4 className="main_title">خدمات ما در وب استودیو</h4>
                   </div>
                </div>
             </div>

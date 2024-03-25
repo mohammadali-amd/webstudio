@@ -7,36 +7,36 @@ import 'swiper/css/pagination';
 
 import { Navigation, Pagination } from 'swiper/modules';
 
-const projects = [
+const team = [
    {
       id: '1',
-      image: '/images/work-1.jpg',
-      title: 'Project 1',
-      description: 'Description 1',
+      name: 'Chris Dave',
+      job: 'Founder and CEO',
+      image: '/images/team-1.jpg',
    },
    {
       id: '2',
-      image: '/images/work-2.jpg',
-      title: 'Project 2',
-      description: 'Description 2',
+      name: 'Sarah Doe',
+      job: 'UI Designer',
+      image: '/images/team-2.jpg',
    },
    {
       id: '3',
-      image: '/images/work-3.jpg',
-      title: 'Project 3',
-      description: 'Description 3',
+      name: 'Rob Hope',
+      job: 'Sofwate Engeneer',
+      image: '/images/team-3.jpg',
    },
    {
       id: '4',
-      image: '/images/work-4.jpg',
-      title: 'Project 4',
-      description: 'Description 4',
+      name: 'Micheal Jordan',
+      job: 'Business Development Manager',
+      image: '/images/team-5.jpg',
    },
    {
-      id: '5',
-      image: '/images/work-5.jpg',
-      title: 'Project 5',
-      description: 'Description 5',
+      id: '4',
+      name: 'Micheal Jordan',
+      job: 'Business Development Manager',
+      image: '/images/team-1.jpg',
    },
 ]
 
@@ -48,8 +48,8 @@ const Projects = () => {
             <div className="row justify-center">
                <div className="w-ull lg:w-1/2">
                   <div className="section_title text-center pb-6">
-                     <h5 className="sub_title">Works</h5>
-                     <h4 className="main_title">Some of Our Recent Works</h4>
+                     <h5 className="sub_title">| نمونه کار های ما</h5>
+                     <h4 className="main_title">با ما کسب و کار خود را بروز کنید</h4>
                   </div>
                </div>
             </div>
@@ -59,7 +59,9 @@ const Projects = () => {
                <div className="row work_active px-4 md:px-12">
                   <Swiper
                      style={{
-                        '--swiper-navigation-color': '#000',
+                        '--swiper-navigation-color': 'teal',
+                        '--swiper-navigation-size': '40px',
+
                         // '--swiper-pagination-color': '#000',
                      }}
                      // spaceBetween={20}
@@ -79,18 +81,22 @@ const Projects = () => {
                      modules={[Navigation, Pagination]}
                      onSwiper={(swiper) => console.log(swiper)}
                   >
-                     {projects.map((item) => (
+                     {team.map((item) => (
                         <SwiperSlide key={item.id}>
-                           <div className="w-full px-2">
-                              <div className="single_item mx-auto">
-                                 <div className="single_work mx-3">
-                                    <div className="work_image">
-                                       <img src={item.image} alt={item.title} className="w-full" />
+                           <div className="w-full px-2 group">
+                              <div className="single_team_item mx-auto">
+                                 <div className="single_team mx-3">
+                                    <div className="team_image relative">
+                                       <img src={item.image} alt={item.name} className="w-full" />
+                                       <ul className="social absolute top-4 right-8">
+                                          <li><a href="#"><i className="lni lni-instagram-fill"></i></a></li>
+                                          <li><a href="#"><i className="lni lni-linkedin-original"></i></a></li>
+                                          <li><a href="#"><i className="lni lni-envelope"></i></a></li>
+                                       </ul>
                                     </div>
-                                    <div className="work_content">
-                                       <a href="#" className="arrow"><i className="lni lni-chevron-right"></i></a>
-                                       <h4 className="work_title text-xl md:text-2xl"><a href="#">{item.title}</a></h4>
-                                       <p className="mt-2">{item.description}</p>
+                                    <div className="team_content py-5 px-8 relative">
+                                       <h4 className="team_name text-xl md:text-2xl"><a href="#" className="text-black group-hover:text-white">{item.name}</a></h4>
+                                       <p className="mt-2 transition-all duration-300 group-hover:text-white">{item.job}</p>
                                     </div>
                                  </div>
                               </div>
