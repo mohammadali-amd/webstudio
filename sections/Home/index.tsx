@@ -42,7 +42,9 @@ const HomePage = () => {
                <div className="w-full lg:w-1/2">
                   <div className="header_hero_content pt-110 lg:pt-0">
                      <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
-                        طراحی وبسایت و ارائه خدمات دیجیتال در <span className="text-theme-color">وب استودیو</span>
+                        <span className="md:leading-[3.7rem]">
+                           طراحی وبسایت و ارائه خدمات دیجیتال در <span className="text-theme-color">وب استودیو</span>
+                        </span>
                      </h2>
                      <p className="mt-8 lg:ml-8">
                         ما اینجا به شما کمک می کنیم تا کسب و کارتون رو دیجیتال کنید.
@@ -52,7 +54,7 @@ const HomePage = () => {
                         برای ارتباط با ما میتونید از شبکه های اجتماعی و راه های ارتباطی در بخش تماس ها استفاده کنید...
                      </p>
                      <div className="hero_btn mt-10">
-                        <a className="main-btn" href="#contact">راه های ارتباطی</a>
+                        <a className="main-btn" href="/contact-us">راه های ارتباطی</a>
                      </div>
                   </div>
                </div>

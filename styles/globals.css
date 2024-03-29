@@ -361,7 +361,7 @@ button {
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-   @apply bg-white rounded-full p-8 shadow-md hover:bg-teal-700 hover:text-white duration-300
+   @apply bg-white rounded-full p-[30px] shadow-md hover:bg-teal-700 hover:text-white duration-300
 }
 
 /* ======== team ======= */
@@ -382,9 +382,7 @@ button {
 }
 
 .single_team {
-   @apply shadow rounded-xl my-8 overflow-hidden bg-white transition-all duration-300
-   /*group*/
-   hover:bg-theme-color;
+   @apply shadow rounded-xl my-8 overflow-hidden bg-white transition-all duration-300 group-hover:bg-theme-color;
 }
 
 .team_image .social li {
@@ -393,6 +391,10 @@ button {
 
 .team_image .social li a {
    @apply w-9 h-9 flex items-center justify-center rounded-full border-2 border-solid border-white text-white bg-transparent hover:bg-theme-color hover:border-theme-color;
+}
+
+.team_content {
+   @apply border-t border-slate-100;
 }
 
 .single_team:hover .social li {
@@ -425,9 +427,7 @@ button {
 }
 
 .single_pricing {
-   @apply border-2 border-dashed border-border-color rounded-xl p-6 md:p-10 transition-all duration-300
-   /*group*/
-   hover:border-theme-color hover:shadow;
+   @apply border-2 border-dashed border-border-color rounded-xl p-6 md:p-10 transition-all duration-300 group-hover:border-theme-color hover:shadow;
 }
 
 .single_pricing.active {

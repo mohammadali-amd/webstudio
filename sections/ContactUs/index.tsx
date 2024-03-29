@@ -1,8 +1,6 @@
-import React from 'react'
-
 const ContactUs = () => {
    return (
-      <section id="contact" className="contact_area relative pt-18 pb-120">
+      <section id="contact" className="contact_area relative pt-25 mt-6 pb-120">
          <div className="contact_image flex items-center justify-end">
             <div className="image lg:pl-13">
                <img src="/images/contact-pic.jpg" alt="contact us" />

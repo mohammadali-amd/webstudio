@@ -1,48 +1,65 @@
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import Image from 'next/image';
 
 const team = [
    {
       id: '1',
-      name: 'Chris Dave',
-      job: 'Founder and CEO',
-      image: '/images/team-1.jpg',
+      name: 'پروژه فول استک MERN',
+      job: 'Room Booker',
+      image: '/images/roombooker.jpg',
+      website: '#',
+      github: 'https://github.com/mohammadali-amd/MERN-Blog',
    },
    {
       id: '2',
-      name: 'Sarah Doe',
-      job: 'UI Designer',
-      image: '/images/team-2.jpg',
+      name: 'طراحی سایت آرامیکو',
+      job: 'Aramico Company',
+      image: '/images/arami-co.jpg',
+      website: 'https://arami-co.com/',
+      github: '#',
    },
    {
       id: '3',
-      name: 'Rob Hope',
-      job: 'Sofwate Engeneer',
-      image: '/images/team-3.jpg',
+      name: 'طراحی سایت آراد لیان',
+      job: 'Alma Machine',
+      image: '/images/alma.jpg',
+      website: 'https://almamachine.com/',
+      github: '#',
    },
    {
       id: '4',
-      name: 'Micheal Jordan',
-      job: 'Business Development Manager',
-      image: '/images/team-5.jpg',
+      name: 'طراحی رابط کاربری UI/UX',
+      job: 'HooBank',
+      image: '/images/hoobank.jpg',
+      website: 'https://hoo-bank.pages.dev/',
+      github: 'https://github.com/mohammadali-amd/Modern-UI-UX-Website',
    },
    {
-      id: '4',
-      name: 'Micheal Jordan',
-      job: 'Business Development Manager',
-      image: '/images/team-1.jpg',
+      id: '5',
+      name: 'پروژه باشگاه بدنسازی',
+      job: 'Fitness Club',
+      image: '/images/fitness-club.jpg',
+      website: 'https://gym-exercises.pages.dev/',
+      github: 'https://github.com/mohammadali-amd/gym_exercises',
+   },
+   {
+      id: '6',
+      name: 'طراحی سایت آرامد',
+      job: 'Aramed Health',
+      image: '/images/aramed.jpg',
+      website: 'https://aramedhealth.com/',
+      github: '#',
    },
 ]
 
 const Projects = () => {
    return (
-
       <section id="work" className="work_area bg-gray pt-120 pb-120">
          <div className="container">
             <div className="row justify-center">
@@ -60,8 +77,7 @@ const Projects = () => {
                   <Swiper
                      style={{
                         '--swiper-navigation-color': 'teal',
-                        '--swiper-navigation-size': '40px',
-
+                        '--swiper-navigation-size': '33px',
                         // '--swiper-pagination-color': '#000',
                      }}
                      // spaceBetween={20}
@@ -75,11 +91,15 @@ const Projects = () => {
                         },
 
                      }}
-                     onSlideChange={() => console.log('slide change')}
+                     autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                     }}
+                     // onSlideChange={() => console.log('slide change')}
                      navigation={true}
                      // pagination={true}
-                     modules={[Navigation, Pagination]}
-                     onSwiper={(swiper) => console.log(swiper)}
+                     modules={[Autoplay, Navigation, Pagination]}
+                  // onSwiper={(swiper) => console.log(swiper)}
                   >
                      {team.map((item) => (
                         <SwiperSlide key={item.id}>
@@ -87,11 +107,10 @@ const Projects = () => {
                               <div className="single_team_item mx-auto">
                                  <div className="single_team mx-3">
                                     <div className="team_image relative">
-                                       <img src={item.image} alt={item.name} className="w-full" />
+                                       <Image src={item.image} alt={item.name} className="w-full" loading='lazy' width={500} height={446} />
                                        <ul className="social absolute top-4 right-8">
-                                          <li><a href="#"><i className="lni lni-instagram-fill"></i></a></li>
-                                          <li><a href="#"><i className="lni lni-linkedin-original"></i></a></li>
-                                          <li><a href="#"><i className="lni lni-envelope"></i></a></li>
+                                          <li><a target='_blank' href={item.website}><i className="lni lni-link"></i></a></li>
+                                          <li><a target='_blank' href={item.github}><i className="lni lni-github-original"></i></a></li>
                                        </ul>
                                     </div>
                                     <div className="team_content py-5 px-8 relative">
