@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { CSSProperties } from 'react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -79,7 +80,7 @@ const Projects = () => {
                         '--swiper-navigation-color': 'teal',
                         '--swiper-navigation-size': '33px',
                         // '--swiper-pagination-color': '#000',
-                     }}
+                     } as CSSProperties}
                      // spaceBetween={20}
                      slidesPerView={1}
                      breakpoints={{

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -17,7 +18,7 @@ const Footer = () => {
                      <div className="footer_about mt-13 mx-3">
                         <div className="footer_logo">
                            <Link href="/">
-                              <img src="/logo.png" alt="Logo" className="w-[60px] md:w-[90px] object-contain" />
+                              <Image src="/logo.png" alt="Logo" className="w-[60px] md:w-[90px] object-contain" width={300} height={300} />
                            </Link>
                         </div>
                         <div className="footer_content mt-8">
