@@ -42,7 +42,7 @@ const Header = () => {
                            <ul id="nav" className="items-center content-start mr-auto lg:justify-end navbar-nav lg:flex">
                               <Link href="/" className="navbar-brand flex items-center gap-3 text-theme-color text-3xl ml-12">
                                  {/* <span>&lt;Web/Studio&gt;</span> */}
-                                 <Image src="/logo.png" alt="Logo" className="w-[60px] md:w-[80px] object-contain" width={300} height={300} />
+                                 <Image src="/images/Logo.png" alt="Logo" className="w-[60px] md:w-[80px] object-contain" width={300} height={300} />
                                  <span>وب استودیو</span>
                               </Link>
                               {links.map((link) => (
@@ -61,7 +61,7 @@ const Header = () => {
                         </button>
 
                         <Link href="/" className="lg:hidden navbar-brand flex items-center gap-3 text-theme-color font-sans text-3xl mr-5">
-                           <Image src="/logo.png" alt="Logo" className="w-[60px] md:w-[90px] object-contain" width={300} height={300} />
+                           <Image src="/images/Logo.png" alt="Logo" className="w-[60px] md:w-[90px] object-contain" width={300} height={300} />
                         </Link>
 
                         <div className="hidden lg:block text-center">
