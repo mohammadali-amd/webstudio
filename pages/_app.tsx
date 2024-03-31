@@ -11,8 +11,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>Webstudio</title>
-        <meta name="description" content="" />
+        <title>Webstudio | وب استودیو</title>
+        <meta name="description" content="وب استودیو، راهکار حرفه‌ای توسعه وبسایت برای شرکت ها و کسب و کار ها. طراحی سفارشی، بهینه‌سازی SEO و پشتیبانی گسترده؛ با ما، وبسایتی قدرتمند برای رشد کسب و کار خود ایجاد کنید." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={vazirFont.className}>

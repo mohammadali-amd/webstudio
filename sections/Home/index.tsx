@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const HomePage = () => {
    return (
@@ -54,7 +55,7 @@ const HomePage = () => {
                         برای ارتباط با ما میتونید از شبکه های اجتماعی و راه های ارتباطی در بخش تماس ها استفاده کنید...
                      </p>
                      <div className="hero_btn mt-10">
-                        <a className="main-btn" href="/contact-us">راه های ارتباطی</a>
+                        <Link className="main-btn" href="/contact-us">راه های ارتباطی</Link>
                      </div>
                   </div>
                </div>

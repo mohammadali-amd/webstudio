@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const team = [
    {
@@ -110,12 +111,12 @@ const Projects = () => {
                                     <div className="team_image relative">
                                        <Image src={item.image} alt={item.name} className="w-full" loading='lazy' width={500} height={446} />
                                        <ul className="social absolute top-4 right-8">
-                                          <li><a target='_blank' href={item.website}><i className="lni lni-link"></i></a></li>
-                                          <li><a target='_blank' href={item.github}><i className="lni lni-github-original"></i></a></li>
+                                          <li><Link target='_blank' href={item.website}><i className="lni lni-link"></i></Link></li>
+                                          <li><Link target='_blank' href={item.github}><i className="lni lni-github-original"></i></Link></li>
                                        </ul>
                                     </div>
                                     <div className="team_content py-5 px-8 relative">
-                                       <h4 className="team_name text-xl md:text-2xl"><a href="#" className="text-black group-hover:text-white">{item.name}</a></h4>
+                                       <h4 className="team_name text-xl md:text-2xl"><Link href="#" className="text-black group-hover:text-white">{item.name}</Link></h4>
                                        <p className="mt-2 transition-all duration-300 group-hover:text-white">{item.job}</p>
                                     </div>
                                  </div>

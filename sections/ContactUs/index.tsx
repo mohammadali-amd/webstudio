@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const ContactUs = () => {
    return (
       <section id="contact" className="contact_area relative pt-25 mt-6 pb-120">
@@ -16,20 +18,20 @@ const ContactUs = () => {
                         <h4 className="main_title">راه های ارتباطی با ما</h4>
                         <div className="pt-12 pl-8 space-y-12 lg:space-y-0 xl:flex lg:justify-between">
                            {/* Instagram */}
-                           <a target="_blank" href="https://instagram.com/webstudio.official/" className="grid justify-items-center" rel="noreferrer">
+                           <Link target="_blank" href="https://instagram.com/webstudio.official/" className="grid justify-items-center" rel="noreferrer">
                               <i className="lni lni-instagram text-3xl"></i>
                               <span className="text-lg mt-3">webstudio.official</span>
-                           </a>
+                           </Link>
                            {/* Whatsapp */}
-                           <a target="_blank" href="tel:09981140432" className="grid justify-items-center" rel="noreferrer">
+                           <Link target="_blank" href="tel:09981140432" className="grid justify-items-center" rel="noreferrer">
                               <i className="lni lni-whatsapp text-3xl"></i>
                               <span className="text-lg mt-3">09981140432</span>
-                           </a>
+                           </Link>
                            {/* Email */}
-                           <a target="_blank" href="mailto:webstudio.ir@gmail.com" className="grid justify-items-center" rel="noreferrer">
+                           <Link target="_blank" href="mailto:webstudio.ir@gmail.com" className="grid justify-items-center" rel="noreferrer">
                               <i className="lni lni-envelope text-3xl"></i>
                               <span className="text-lg mt-3">webstudio.ir@gmail.com</span>
-                           </a>
+                           </Link>
                         </div>
                      </div>
 
