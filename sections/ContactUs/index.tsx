@@ -1,11 +1,22 @@
+import Image from "next/image";
 import Link from "next/link"
+import { useForm } from 'react-hook-form';
 
 const ContactUs = () => {
+   const { register, trigger, formState: { errors } } = useForm();
+
+   const onSubmit = async (e: any) => {
+      const isValid = await trigger();
+      if (!isValid) {
+         e.preventDefault();
+      }
+   };
+
    return (
       <section id="contact" className="contact_area relative pt-25 mt-6 pb-120">
          <div className="contact_image flex items-center justify-end">
             <div className="image lg:pl-13">
-               <img src="/images/contact-pic.jpg" alt="contact us" />
+               <Image src="/images/contact-pic.jpg" alt="contact us" width={500} height={500} />
             </div>
          </div>
 
@@ -36,26 +47,77 @@ const ContactUs = () => {
                      </div>
 
                      <div className="contact_form">
-                        <form id="contact-form" action="" method="POST">
+                        <form
+                           target="_blank"
+                           onSubmit={onSubmit}
+                           id="contact-form"
+                           action="https://formsubmit.co/webstu.ir@gmail.com"
+                           method="POST"
+                        >
                            <div className="row">
                               <div className="w-full md:w-1/2">
                                  <div className="mx-3">
                                     <div className="single_form mt-8">
-                                       <input name="name" id="name" type="text" placeholder="نام" className="w-full rounded-md py-4 px-6 border border-solid border-body-color" />
+                                       <input
+                                          id="name"
+                                          type="text"
+                                          placeholder="نام شما"
+                                          className="w-full rounded-md py-4 px-6 border border-solid border-body-color"
+                                          {...register('name', {
+                                             required: true,
+                                             maxLength: 30,
+                                          })}
+                                       />
+                                       {errors.name && (
+                                          <p className="mt-1 text-red-500">
+                                             {errors.name.type === 'required' && 'پر کردن این بخش الزامیست!'}
+                                             {errors.name.type === 'maxLength' && 'حداکثر 100 کاراکتر مجاز هستید وارد کنید.'}
+                                          </p>
+                                       )}
                                     </div>
                                  </div>
                               </div>
                               <div className="w-full md:w-1/2">
                                  <div className="mx-3">
                                     <div className="single_form mt-8">
-                                       <input name="email" id="email" type="email" placeholder="ایمیل" className="w-full rounded-md py-4 px-6 border border-solid border-body-color" />
+                                       <input
+                                          id="email"
+                                          type="email"
+                                          placeholder="ایمیل"
+                                          className="w-full rounded-md py-4 px-6 border border-solid border-body-color"
+                                          {...register('email', {
+                                             required: true,
+                                             pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                          })}
+                                       />
+                                       {errors.email && (
+                                          <p className="mt-1 text-red-500">
+                                             {errors.email.type === 'required' && 'پر کردن این بخش الزامیست!'}
+                                             {errors.email.type === 'pattern' && 'ایمیل وارد شده اشتباه است.'}
+                                          </p>
+                                       )}
                                     </div>
                                  </div>
                               </div>
                               <div className="w-full">
                                  <div className="mx-3">
                                     <div className="single_form mt-8">
-                                       <textarea name="message" id="message" placeholder="متن مورد نظر خود را بنویسید..." rows={5} className="w-full rounded-md py-4 px-6 border border-solid border-body-color resize-none"></textarea>
+                                       <textarea
+                                          id="message"
+                                          placeholder="متن مورد نظر خود را بنویسید..."
+                                          rows={5}
+                                          className="w-full rounded-md py-4 px-6 border border-solid border-body-color resize-none"
+                                          {...register('message', {
+                                             required: true,
+                                             maxLength: 200,
+                                          })}
+                                       />
+                                       {errors.message && (
+                                          <p className="text-red-500">
+                                             {errors.message.type === 'required' && 'پر کردن این بخش الزامیست!'}
+                                             {errors.message.type === 'maxLength' && 'حداکثر 200 کاراکتر مجاز هستید وارد کنید.'}
+                                          </p>
+                                       )}
                                     </div>
                                  </div>
                               </div>
